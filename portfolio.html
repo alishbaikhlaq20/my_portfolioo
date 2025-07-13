@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALISHBA IKHLAQ | Software Engineer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background: #000;
+      color: #f1f1f1;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #000;
+      border-bottom: 1px solid #7f00ff;
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #7f00ff;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #7f00ff;
+      box-shadow: 0 0 25px #7f00ffaa;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 0.5rem;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .divider {
+      height: 2px;
+      background: #7f00ff;
+      width: 120px;
+      margin: 3rem auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #7f00ff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: #7f00ff;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .about-tagline {
+      font-size: 1.7rem;
+      color: #ddd;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .projects, .certifications, .experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card, .cert-card, .experience-card {
+      background: #111;
+      border: 1px solid #7f00ff55;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(127, 0, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover, .cert-card:hover, .experience-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(127, 0, 255, 0.3);
+    }
+
+    .cert-card img, .experience-card img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #7f00ff;
+      margin-bottom: 1rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+      justify-content: center;
+    }
+
+    .skills-group {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .skills-group h3 {
+      color: #7f00ff;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+
+    a {
+      color: #00f0ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      border-top: 1px solid #7f00ff55;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.5rem 0.8rem;
+      }
+      .skills-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="profile.jpg" alt="Alishba Ikhlaq Profile Photo" class="profile-pic">
+    <h1>Alishba Ikhlaq</h1>
+    <p>Software Engineering Student</p>
+  </header>
+
+  <div class="divider"></div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about-tagline">I craft ideas into sleek, useful tech — always learning, building, and making an impact!</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Phishing Awareness</h3>
+        <p>Simulated phishing with Kali Linux’s SET toolkit to teach users how to spot attacks.</p>
+      </div>
+      <div class="project-card">
+        <h3>Hotel Management</h3>
+        <p>Full-stack hotel app with OOP Java to manage bookings, guests, and staff.</p>
+      </div>
+      <div class="project-card">
+        <h3>Timetable Generator</h3>
+        <p>AI tool using Python to create clash-free timetables, detect conflicts, and export reports.</p>
+      </div>
+      <div class="project-card">
+        <h3>Food Ordering System</h3>
+        <p>Full-stack web app (Python & React) with Oracle DB for secure order management.</p>
+      </div>
+      <div class="project-card">
+        <h3>Arduino Radar</h3>
+        <p>Hardware radar with Arduino & sonar to detect objects & display positions live.</p>
+      </div>
+      <div class="project-card">
+        <h3>Custom OS</h3>
+        <p>Built a simple OS using Linux & Python on VMware for testing and learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skills-group">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C / C++</li>
+          <li>React JS</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skills-group">
+        <h3>Tools</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>Kali Linux</li>
+          <li>Packet Tracer</li>
+          <li>Vmware Workstation Pro</li>
+          <li>SPSS</li>
+          <li>Linux</li>
+          <li>NetBeans</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="cert-card">
+        <img src="google.jpg" alt="Google Soft Skills">
+        <p>Google: Soft Skills Program</p>
+      </div>
+      <div class="cert-card">
+        <img src="probability.jpg" alt="Probability">
+        <p>Udemy: Probability: The Engine of Inference</p>
+      </div>
+      <div class="cert-card">
+        <img src="A TOZ .jpg" alt="ML A to Z">
+        <p>Udemy: Machine Learning with Python (A TO Z)</p>
+      </div>
+      <div class="cert-card">
+        <img src="CISOC.jpg" alt="CISCO Networking">
+        <p>CISCO: Networking Basics</p>
+      </div>
+      <div class="cert-card">
+        <img src="graphic designing.jpg" alt="Design Challenge">
+        <p>Phantom Studios: 30 Days Design Challenge</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="experience-card">
+        <img src="WALMART.jpg" alt="Intern">
+        <h3>Software Engineer Intern</h3>
+        <p>Real-world experience in data structures, architecture, and team problem-solving.</p>
+      </div>
+      <div class="experience">
+      <div class="experience-card">
+        <img src="ea.jpg" alt="Intern">
+        <h3>Software Engineer Intern</h3>
+        <p>Contributed to game development with feature proposals, class design, and system improvements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align: center;">Email: <a href="mailto:alishbaikhlaqshah@gmail.com">alishbaikhlaqshah@gmail.com</a></p>
+  <p style="text-align: center;">LinkedIn: <a href="https://www.linkedin.com/in/alishba-ikhlaq-shah-7b6892348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="LINKEDIN ">LinkedIn</a></p>
+  <p style="text-align: center;">GitHub: <a href="#" target="_blank">github.com/yourusername</a></p>
+</section>
+
+
+  <footer>
+    &copy; 2025 Alishba Ikhlaq | Software Engineer
+  </footer>
+
+</body>
+</html>
